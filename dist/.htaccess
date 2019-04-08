@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index$ index.php [L]
+
+ServerSignature OFF
+AddDefaultCharset UTF-8
+
+ErrorDocument 404 /error.php

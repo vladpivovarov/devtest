@@ -1,0 +1,20 @@
+.comments {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: -35px;
+  margin-bottom: 35px;
+
+  @include tablet {
+    width: (201 * 2) + (35) + px !important;
+    margin-left: -20px;
+  }
+  @include mobile {
+    width: (201) + (35) + px !important;
+  }
+}
+
+.comments__item {
+  margin-left: 35px;
+  margin-bottom: 35px;
+}

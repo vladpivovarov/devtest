@@ -1,0 +1,66 @@
+.comment {
+  width: 166px;
+  min-height: 203px;
+}
+
+.comment__title {
+  width: 100%;
+  min-height: 42px;
+  padding: 15px 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  font-family: $roboto;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.comment__email {
+  min-height: 62px;
+  padding: 25px 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  font-family: $roboto;
+  font-size: 17px;
+  font-weight: bold;
+
+}
+
+.comment__text {
+  padding: 0px 10px 15px 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  font-family: $roboto;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.comment:nth-of-type(odd) {
+  background-color: $light_blue_bg;
+  .comment__title {
+    background-color: $blue_bg;
+    color: #fff;
+  }
+  .comment__email {
+    color: #6d737b;
+  }
+  & .comment__text {
+    color: #767582;
+  }
+}
+
+.comment:nth-of-type(even) {
+  background-color: $light_green_bg;
+  .comment__title {
+    background-color: $green_bg;
+    color: #fff;
+  }
+  .comment__email {
+    color: #58ad52;
+  }
+  & .comment__text {
+    color: #768275;
+  }
+}

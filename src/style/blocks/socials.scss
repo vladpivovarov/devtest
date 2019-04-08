@@ -1,0 +1,30 @@
+.socials {
+  display: flex;
+}
+
+.socials__item {
+  display: inline-block;
+  margin-left: 26px;
+  vertical-align: middle;
+  width: 23px;
+  height: 23px;
+}
+
+.socials__link {
+  display: block;
+  width: 23px;
+  height: 23px;
+  line-height: 23px;
+  text-align: center;
+  border: 1px solid #454648;
+  border-radius: 50%;
+  background-color: #2F3338;
+  color: #656566;
+  font-size: 13px;
+  transition: all .2s;
+  &:hover {
+    color: lighten(#656566, 20%);
+    border: 1px solid lighten(#454648, 20%);
+    text-decoration: none;
+  }
+}

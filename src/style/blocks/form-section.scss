@@ -1,0 +1,13 @@
+.form-section__logo {
+  width: 140px;
+  height: 140px;
+  overflow: hidden;
+  transform: translateX(-22px);
+  @include tablet {
+    transform: translateX(0px);
+  }
+}
+
+.form-section__logo-image {
+  max-width: 100%;
+}

@@ -1,0 +1,77 @@
+
+
+//mixins
+@mixin font($font, $weight: normal, $style: normal) {
+  font-family: $font;
+  font-weight: $weight;
+  font-style: $style;
+}
+
+@mixin center($x: both) {
+  @if($x == both) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  @if($x == y){
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  @if($x == x){
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+//media
+
+@mixin bigdesktop {
+  @media screen and (min-width: 1980px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin biglaptop {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media screen and (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin minimobile {
+  @media screen and (max-width: 360px) {
+    @content;
+  }
+}
+
+@mixin landmobile {
+  @media screen and (max-width: 812px) and (orientation: landscape) {
+    @content;
+  }
+}
